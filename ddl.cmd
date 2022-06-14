@@ -1,0 +1,17 @@
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\BatchSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\LandingSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\ReferenceMappingSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\ReferenceMdsSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\ServingSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\ReferenceRuleSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\StagingSchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Schema\ServingHistorySchema.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Routines\BatchStart.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\BatchTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\LandingTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\ReferenceMappingTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\ReferenceMdsTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\ReferenceRuleTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\ServingHistoryTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\ServingTable.sql
+sqlcmd -S %sql_host% -U %sql_user% -P %sql_password% -d %sql_database% -i database\Table\StagingTable.sql
